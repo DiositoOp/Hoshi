@@ -1,0 +1,91 @@
+/* Contenedor general */
+.about-section {
+  background-color: #000000; /* Fondo oscuro */
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor del contenido (Imagen + Texto) */
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Imagen del chef */
+.chef-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+}
+
+.chef-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Frase inspiradora */
+.inspirational-quote {
+  font-style: italic;
+  color: #ff8c00;
+  margin-top: 1rem;
+}
+
+/* Contenido del texto en fondo blanco */
+.text-content {
+  background-color: #ffffff00; /* Fondo blanco */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 75%;
+}
+
+/* Título centrado */
+.about-title {
+  font-size: 3.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ff2e63;
+}
+
+/* Línea divisora entre título y texto */
+.divider {
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff8c00, #ff2e63);
+  margin: 0 auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+/* Estilo del párrafo */
+.text-content p {
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Diseño responsivo para móviles */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .chef-image-container,
+  .text-content {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,109 @@
+/* Sección del Menú */
+.menu-section {
+  padding: 4rem 2rem;
+  background-color: #000000; /* Fondo gris oscuro */
+  text-align: center;
+}
+
+/* Título del Menú */
+.menu-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff8c00, #ff2e63); /* Degradado vibrante */
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+
+/* Contenedor del Menú */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas en escritorio */
+  gap: 2rem; /* Espaciado entre elementos */
+  justify-items: center;
+  padding: 0 6rem; /* Ajustar el padding */
+}
+
+/* Elemento del Menú */
+.menu-item {
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px; /* Ancho máximo */
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem; /* Espacio entre filas */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover: Efecto en el elemento del menú */
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del Platillo */
+.menu-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Nombre del Platillo */
+.menu-item-name {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #ff2e63; /* Rosa vibrante */
+}
+
+/* Descripción del Platillo */
+.menu-item-description {
+  color: #777; /* Gris claro */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* Precio del Platillo */
+.menu-item-price {
+  font-weight: bold;
+  color: #ff8c00; /* Naranja brillante */
+  font-size: 1.5rem;
+}
+
+/* Botón: Ver Menú Completo */
+.view-full-menu-button {
+  display: inline-block;
+  background-color: #ff2e63;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-full-menu-button:hover {
+  background-color: #e01e50;
+}
+
+/* Ajustes para Pantallas Pequeñas */
+@media (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: 1fr; /* Una columna en móviles */
+    padding: 0;
+  }
+
+  .menu-item {
+    width: 90%; /* Ocupar mayor ancho en móviles */
+    margin-bottom: 2rem; /* Espacio entre elementos */
+  }
+}

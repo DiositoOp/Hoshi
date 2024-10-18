@@ -1,0 +1,58 @@
+/* Estilo del botón flotante */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.1);
+}
+
+/* Título de cada categoría con línea animada */
+.category-title {
+  font-size: 2.2rem;
+  margin: 2rem 0;
+  color: #ff8c00;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+
+.category-title::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff8c00, #ff2e63);
+  left: 25%;
+  bottom: -10px;
+  border-radius: 2px;
+  animation: underline 2s infinite alternate;
+}
+
+/* Animación de subrayado */
+@keyframes underline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}

@@ -1,0 +1,38 @@
+/* Variables de color y tipografía globales */
+:root {
+  --color-background: #000000; /* Fondo principal */
+  --color-primary: #ff2e63; /* Rosa vibrante */
+  --color-secondary: #ff8c00; /* Naranja brillante */
+  --color-light: #ffffff; /* Blanco puro */
+  --color-text-dark: #333333; /* Texto oscuro */
+  --color-text-muted: #777777; /* Texto gris claro */
+  --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para tarjetas */
+  --font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background); /* Fondo oscuro */
+  color: var(--color-light); /* Texto en blanco */
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--color-primary); /* Usar rosa para encabezados */
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-secondary); /* Enlaces en naranja */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-primary); /* Hover en rosa vibrante */
+}
+

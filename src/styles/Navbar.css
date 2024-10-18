@@ -1,0 +1,85 @@
+/* Estilos generales del Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; /* Fondo negro */
+  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif; /* Fuente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para mayor definición */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff6b6b; /* Borde rojo claro */
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.1); /* Pequeño efecto de sombra */
+}
+
+/* Links de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff8c00; /* Efecto hover con naranja */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ff4d4d; /* Hover en rojo más oscuro */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    gap: 1rem;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,123 @@
+/* Estilo general del contenedor */
+.menu2-section {
+    padding: 4rem 2rem;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  /* Título del menú */
+  .menu2-title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff8c00, #ff2e63);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Grilla para escritorio */
+  .menu2-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas en escritorio */
+    gap: 3rem;
+    justify-items: center;
+    padding: 0 6rem;
+  }
+  
+  /* Estilo horizontal para los elementos */
+  .menu2-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .menu2-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu2-image-container {
+    flex: 1;
+  }
+  
+  .menu2-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .menu2-content {
+    flex: 1;
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  /* Estilo del texto y botones */
+  .menu2-item-name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ff2e63;
+  }
+  
+  .menu2-item-description {
+    margin-bottom: 1rem;
+    color: #777;
+    font-style: italic;
+  }
+  
+  .menu2-item-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff8c00;
+    margin-bottom: 1rem;
+  }
+  
+  .order-now-button {
+    background-color: #ff2e63;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .order-now-button:hover {
+    background-color: #e01e50;
+  }
+  
+  /* Vista móvil */
+  @media (max-width: 768px) {
+    .menu2-container {
+      grid-template-columns: 1fr; /* Una columna en móvil */
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+  
+    .menu2-item {
+      flex-direction: column; /* Vertical en móvil */
+    }
+  
+    .menu2-image {
+      height: 200px;
+    }
+  
+    .menu2-content {
+      text-align: center;
+    }
+  
+    .menu2-item-name {
+      font-size: 1.8rem;
+    }
+  
+    .menu2-item-price {
+      font-size: 1.4rem;
+    }
+  }
+  
