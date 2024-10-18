@@ -9,7 +9,6 @@ const Footer = () => (
         <h2 className="footer-title">Contáctanos</h2>
         <p>📍 Julia@SushihushiMaestroroshi.com</p>
         <p>📞 758 104 0495</p>
-       
       </div>
 
       <div className="footer-column">
